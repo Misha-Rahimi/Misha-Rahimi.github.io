@@ -1,7 +1,9 @@
 window.onscroll = function () {
-    var navbar = document.getElementsByClassName('nav')[0];
+    var navbars = document.getElementsByClassName('nav');
 
-    var sticky = navbar.offsetTop;
+    for (var i = 0; i < navbars.length; i++) {
+        var navbar = navbars[i];
+        var sticky = navbar.offsetTop;
 
         console.log(sticky);
         if (window.pageYOffset > sticky) {
@@ -9,4 +11,7 @@ window.onscroll = function () {
         } else {
             navbar.classList.remove("nav-stick");
         }
+    }
+
+
 };

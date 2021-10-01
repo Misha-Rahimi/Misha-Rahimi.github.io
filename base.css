@@ -18,11 +18,26 @@ body {
 .nav {
     position: absolute;
     width: 100%;
-    padding: 20px !important;
+    padding: 30px !important;
     background-color: none;
     transition: ease .75s;
+    justify-content: center;
 
     z-index: 1;
+}
+
+.nav.nav-tablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav.nav-tablet {
+        display: flex;
+    }
+
+    .nav.nav-mobile {
+        display: none;
+    }
 }
 
 .nav a {
@@ -56,9 +71,15 @@ body {
     width: 100%;
     position: relative;
 
-    background-image: url("Images/DesertStars.jpg");
-    background-size: cover;
+    /* background-color: #0e5d80; */
+    background: url("Images/DesertStars.jpg") no-repeat;
     background-position: top;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;    
 }
 
 .contactInfoSection {
@@ -68,17 +89,6 @@ body {
 .contactInfoSection h2, .contactInfoSection p {
     color: black;
 }
-
-/* .backgroundImage {
-    
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-
-    filter: brightness(.75);
-} */
 
 .headerText {
     align-items: center;
