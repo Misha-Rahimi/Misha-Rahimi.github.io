@@ -7,20 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="navBarScript.js"></script>
 
     <title>Misha Rahimi</title>
 </head>
 
 <body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Misha Rahimi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#technicalExperience">Technical Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#nonTechnicalExperience">Non-Technical Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+    </ul>
+    
     <div class="headerSection">
         <div class="headerText">
-            <h1>Misha Rahimi</h1>
-            <h2>Software Engineer</h2>
+            <div class="row">
+                <div class="column">
+                    <h1>Misha Rahimi</h1>
+                    <h2>Software Engineer</h2>
+                </div>
+            </div>
         </div>
         <div class="backgroundImage"></div>
     </div>
 
     <div class="about">
+        <span id="about"></span>
         <div class="container">
             <div class="row center">
                 <div class="col-md-10 col-lg-8">
@@ -38,6 +65,7 @@
     </div>
 
     <div class="technicalExperienceSection">
+        <span id="technicalExperience"></span>
         <div class="container">
             <div class="row center">
                 <div class="col-md-10 col-lg-8">
@@ -83,7 +111,28 @@
         </div>
     </div>
 
+    <div class="skillsSection">
+        <span id="skills"></span>
+        <div class="container">
+            <div class="row center">
+                <div class="col-md-10 col-lg-8">
+                    <h2>Technical Skills</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="nonTechnicalExperienceSection">
+        <span id="nonTechnicalExperience"></span>
         <div class="container">
             <div class="row center">
                 <div class="col-md-10 col-lg-8">
@@ -116,6 +165,7 @@
     </div>
 
     <div class="contactInfoSection">
+        <span id="contact"></span>
         <div class="container">
             <div class="row center">
                 <div class="col-md-10 col-lg-8">
@@ -141,7 +191,7 @@
 </body>
 
 <footer>
-    
+
 </footer>
 
 </html>
