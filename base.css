@@ -54,14 +54,37 @@ body {
     opacity: 1;
 }
 
+.nav-item > a {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-item > a:hover {
+    transition: ease .5s;
+    border-bottom-color: white;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.fade * {
+    transition: .75s !important;
+    opacity: 0 !important;
+}
+
+.fade-active * {
+    transition: ease .75s !important;
+    opacity: 1 !important;
+}
+
 .technicalExperienceSection {
     background-color: #262626;
     color: white;
 }
 
 .nonTechnicalExperienceSection {
-    background-color: #f0f0f0;
-    color: black;
+    background-color: #204c78;
+    color: white;
 }
 
 .headerSection {
