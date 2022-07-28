@@ -1,0 +1,55 @@
+@import './navbar.css';
+@import './footer.css';
+@import './section.css';
+
+:root {
+    --dark-gray: #262626;
+    --gray: #3f3f3f;
+    --medium-gray: #7b7b7b;
+    --light-gray: #dddddd;
+    --very-light-gray: #eff0f0;
+    --medium-blue: #2579cc;
+    --light-blue: #cee7ff;
+
+    --dark-section-background: var(--dark-gray);
+    --dark-section-text: var(--light-gray);
+    --blue-section-background: var(--light-blue);
+    --blue-section-text: var(--dark-gray);
+    --light-section-background: var(--very-light-gray);
+    --light-section-text: var(--gray);
+    --white-section-background: white;
+    --white-section-text: var(--gray);
+}
+
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark-gray);
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+
+.center {
+    justify-content: center;
+}
+
+body > div {
+    position: relative;
+}
+
+  
+body > div > span {
+    position: absolute;
+    top: -50px;
+}
+
+.text-center {
+    text-align: center;
+}

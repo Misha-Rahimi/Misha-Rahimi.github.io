@@ -1,0 +1,66 @@
+@keyframes navBarStick {
+    from {background-color: none;}
+    to {background-color: black;}
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    padding: 30px !important;
+    background-color: none;
+    transition: ease .75s;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.nav.nav-tablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav.nav-tablet {
+        display: flex;
+    }
+
+    .nav.nav-mobile {
+        display: none;
+    }
+}
+
+.nav a {
+    color: white;
+}
+
+.nav-stick {
+    transition: ease .75s;
+    background-color: black;
+    position: fixed;
+    padding: 5px !important;
+    margin-left: 0px;
+    align-items: center;
+    opacity: 1;
+}
+
+.nav-item > a {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-item > a:hover {
+    transition: ease .5s;
+    border-bottom-color: white;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.fade * {
+    transition: 1s !important;
+    opacity: 0 !important;
+}
+
+.fade-active * {
+    transition: ease 1s !important;
+    opacity: 1 !important;
+}
