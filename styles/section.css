@@ -1,3 +1,18 @@
+:root {
+    --section-heading-margin-bottom: 30px;
+    --experience-header-margin-bottom: 5px;
+    --experience-subsection-margin-bottom: 40px;
+    --experience-subheader-margin-bottom: 20px;
+    --experience-header-font-size: 35px;
+    --experience-company-font-weight: 700;
+    --experience-company-font-size: 25px;
+    --experience-date-font-size: 18px;
+    --experience-date-font-weight: bold;
+    --experience-header-font-size-mobile: 32px;
+    --experience-company-font-size-mobile: 23px;
+    --experience-date-font-size-mobile: 18px;
+}
+
 .dark-section {
     background-color: var(--dark-section-background);
     color: var(--dark-section-text);
@@ -18,35 +33,36 @@
     color: var(--white-section-text);
 }
 
+.experience-subsection {
+    margin-bottom: var(--experience-subsection-margin-bottom);
+}
+
+.experience-subsection:last-child {
+    margin-bottom: 0;
+}
 
 .experience-subheader {
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: var(--experience-subheader-margin-bottom);
 }
 
 .experience-header {
     font-size: 35px !important;
     font-weight: 700;
-    margin-bottom: 0;
-    margin-top: 40px;
+    margin-bottom: var(--experience-header-margin-bottom);
 }
 
 .experience-subheader .company {
-    font-size: 25px !important;
-    font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 15px;
+    font-size: var(--experience-company-font-size) !important;
+    font-weight: var(--experience-company-font-weight);
     
     font-style: italic;
 }
 
 .experience-subheader .date {
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding-left: 1rem;
 
-    font-size: 20px !important;
-    font-weight: bold;
+    font-size: var(--experience-date-font-size) !important;
+    font-weight: var(--experience-date-font-weight);
     font-style: normal;
     
     text-transform: uppercase;
@@ -59,14 +75,36 @@
     color: var(--medium-gray);
 }
 
-.experience-subheader .date {
-    /* padding-left: .75em; */
+@media (max-width: 768px) {
+    .experience-subsection {
+        text-align: center;
+    }
+
+    .experience-header {
+        font-size: var(--experience-header-font-size-mobile) !important;
+    }
+
+    .experience-subheader .company {
+        font-size: var(--experience-company-font-size-mobile) !important;
+    }
+
+    .experience-subheader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-subheader .date {
+        font-size: var(--experience-date-font-size-mobile) !important;
+
+        padding-left: 0;
+        margin-top: 5px;
+    }
 }
 
 
 
 .skill-tile img {
-    max-width: 75%;
+    max-width: 70%;
     max-height: 65%;
 }
 
@@ -83,14 +121,19 @@
 }
 
 .skill-tile {
-    border: solid;
+    /* border: solid; */
     text-align: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.skill-tile p {
+    font-size: 25px !important;
+    font-weight: bold;
 }
 
 
@@ -115,6 +158,7 @@
 .headerText {
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: white;
     display: flex;
     height: 100%;
@@ -144,11 +188,12 @@ h1 {
     text-align: center;
 }
   
-h2 {
+.section-header {
     font-size: 50px !important;
-    margin: 30px 0 20px !important;
+    /* margin: 30px 0 20px !important; */
     font-weight: 600 !important;
     text-align: center;
+    margin-bottom: var(--section-heading-margin-bottom);
 }
 
 .subHeading {
