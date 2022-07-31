@@ -16,6 +16,8 @@
     --experience-date-font-weight: bold;
     --experience-date-font-size: 18px;
     --experience-date-font-size-mobile: 18px;
+
+    --skill-tile-margin-bottom-mobile: 50px;
 }
 
 .dark-section {
@@ -117,12 +119,31 @@
     max-width: 90%;
 }
 
-.skill-tile .img-wrapper {
+.img-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .skill-tile img {
+        max-height: none;
+        max-width: 60%;
+    }
+
+    .skill-tile {
+        margin-bottom: var(--skill-tile-margin-bottom-mobile);
+    }
+
+    .skill-tile:last-child {
+        margin-bottom: none;
+    }
+
+    .skill-tile p {
+        margin-top: 30px;
+    }
 }
 
 .skill-tile {
