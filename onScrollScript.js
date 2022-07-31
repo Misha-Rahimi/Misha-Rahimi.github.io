@@ -5,10 +5,13 @@ window.onscroll = function () {
         var navbar = navbars[i]
         var sticky = navbar.offsetTop
 
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add('nav-stick')
-        } else {
+        // alert(`${window.pageYOffset} ${sticky}`)
+        // alert(window.pageYOffset > sticky)
+        // alert(window.pageYOffset == 0)
+        if (window.pageYOffset == 0) {
             navbar.classList.remove('nav-stick')
+        } else {
+            navbar.classList.add('nav-stick')
         }
     }
 

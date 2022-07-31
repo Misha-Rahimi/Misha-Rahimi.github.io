@@ -40,6 +40,9 @@
     margin-left: 0px;
     align-items: center;
     opacity: 1;
+
+    padding-top: 100px !important;
+    margin-top: -95px !important;
 }
 
 .nav-item > a {

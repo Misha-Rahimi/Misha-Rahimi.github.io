@@ -1,15 +1,20 @@
 :root {
-    --section-heading-margin-bottom: 30px;
-    --experience-header-margin-bottom: 5px;
+    --section-heading-margin-bottom: 40px;
+    
     --experience-subsection-margin-bottom: 40px;
-    --experience-subheader-margin-bottom: 20px;
+
+    --experience-header-margin-bottom: 5px;
     --experience-header-font-size: 35px;
+    --experience-header-font-size-mobile: 32px;
+    
+    --experience-subheader-margin-bottom: 20px;
+    
     --experience-company-font-weight: 700;
     --experience-company-font-size: 25px;
-    --experience-date-font-size: 18px;
-    --experience-date-font-weight: bold;
-    --experience-header-font-size-mobile: 32px;
     --experience-company-font-size-mobile: 23px;
+    
+    --experience-date-font-weight: bold;
+    --experience-date-font-size: 18px;
     --experience-date-font-size-mobile: 18px;
 }
 
