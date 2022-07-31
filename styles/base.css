@@ -29,6 +29,13 @@
     font-family: 'Raleway', sans-serif;
 }
 
+@supports(padding:max(0px)) {
+    body, header, footer {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}
+
 body {
     margin: 0;
     background-color: var(--dark-gray);
