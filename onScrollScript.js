@@ -1,5 +1,6 @@
 window.onscroll = function () {
     var navbars = document.getElementsByClassName('nav')
+    var metaTag = document.getElementsByClassName('theme-tag')[0]
 
     for (var i = 0; i < navbars.length; i++) {
         var navbar = navbars[i]
@@ -9,8 +10,10 @@ window.onscroll = function () {
         // alert(window.pageYOffset > sticky)
         // alert(window.pageYOffset == 0)
         if (window.pageYOffset == 0) {
+            metaTag.content = '#2579cc'
             navbar.classList.remove('nav-stick')
         } else {
+            metaTag.content = '#000000'
             navbar.classList.add('nav-stick')
         }
     }
