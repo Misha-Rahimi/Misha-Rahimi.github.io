@@ -1,18 +1,18 @@
 :root {
     --section-heading-margin-bottom: 40px;
-    
+
     --experience-subsection-margin-bottom: 40px;
 
     --experience-header-margin-bottom: 5px;
     --experience-header-font-size: 35px;
     --experience-header-font-size-mobile: 32px;
-    
+
     --experience-subheader-margin-bottom: 20px;
-    
+
     --experience-company-font-weight: 700;
     --experience-company-font-size: 25px;
     --experience-company-font-size-mobile: 23px;
-    
+
     --experience-date-font-weight: bold;
     --experience-date-font-size: 18px;
     --experience-date-font-size-mobile: 18px;
@@ -61,7 +61,7 @@
 .experience-subheader .company {
     font-size: var(--experience-company-font-size) !important;
     font-weight: var(--experience-company-font-weight);
-    
+
     font-style: italic;
 }
 
@@ -71,7 +71,7 @@
     font-size: var(--experience-date-font-size) !important;
     font-weight: var(--experience-date-font-weight);
     font-style: normal;
-    
+
     text-transform: uppercase;
 
     color: var(--medium-gray);
@@ -178,7 +178,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .headerText {
@@ -190,7 +190,7 @@
     height: 100%;
 }
 
-.headerText h1 {    
+.headerText h1 {
     font-size: 100px;
     font-weight: 500;
 }
@@ -213,7 +213,7 @@ h1 {
     margin: 0;
     text-align: center;
 }
-  
+
 .section-header {
     font-size: 50px !important;
     /* margin: 30px 0 20px !important; */
@@ -229,4 +229,70 @@ h1 {
 
 p {
     font-size: 18px !important;
+}
+
+
+.nonTechnicalExperienceSection {
+    text-align: center;
+}
+
+.nonTechnicalExperienceSection .section-header {
+    color: var(--light-gray);
+}
+
+.nonTechnicalExperienceSection .subHeading {
+    color: var(--light-gray);
+
+    margin: 80px 0 30px;
+}
+
+.university {
+    font-size: 25px !important;
+}
+
+.grad-date {
+    font-style: italic;
+}
+
+.course-tile {
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-tile .class-description {
+    font-weight: bold;
+}
+
+.course-tile .class-description {
+    /* color: var(--medium-gray) */
+}
+
+.contactInfoSection .contact-header {
+    font-weight: bold;
+}
+
+.contactInfoSection img {
+    width: 64px;
+    height: 64px;
+}
+
+.contactInfoSection .contact-tile {
+    justify-content: center;
+    display: flex;
+    margin: 20px 0;
+}
+
+.contactInfoSection .contact-tile .contact-info {
+    margin: 0 0 0 20px;
+    line-height: 64px;
+}
+
+.contactInfoSection .contact-tile .email {
+    text-decoration: underline;
+    color: initial;
+    font-size: initial;
+    font-weight: initial;
 }
