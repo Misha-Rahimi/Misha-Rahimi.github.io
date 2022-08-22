@@ -48,12 +48,7 @@
     margin-bottom: 0;
 }
 
-.experience-subsection li p {
-    margin-bottom: 8px;
-    margin-left: 8px;
-}
-
-.experience-subsection li p a {
+.experience-subsection p a {
     color: inherit;
 }
 

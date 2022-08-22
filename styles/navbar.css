@@ -1,6 +1,11 @@
 @keyframes navBarStick {
-    from {background-color: none;}
-    to {background-color: black;}
+    from {
+        background-color: none;
+    }
+
+    to {
+        background-color: black;
+    }
 }
 
 .nav {
@@ -45,13 +50,8 @@
     margin-top: -95px !important;
 }
 
-.nav-item > a {
+.nav-item>a {
     border-bottom: 3px solid transparent;
-}
-
-.nav-item > a:hover {
-    transition: ease .5s;
-    border-bottom-color: white;
 }
 
 .fade {
