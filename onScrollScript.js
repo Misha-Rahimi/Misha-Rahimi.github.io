@@ -6,9 +6,6 @@ window.onscroll = function () {
         var navbar = navbars[i]
         var sticky = navbar.offsetTop
 
-        // alert(`${window.pageYOffset} ${sticky}`)
-        // alert(window.pageYOffset > sticky)
-        // alert(window.pageYOffset == 0)
         if (window.pageYOffset == 0) {
             metaTag.content = '#2579cc'
             navbar.classList.remove('nav-stick')
@@ -24,9 +21,9 @@ window.onscroll = function () {
         var fade = fadeSections[i]
         var fadeTop = fade.offsetTop + 80
 
-        console.log(i)
-        console.log(window.pageYOffset + window.innerHeight)
-        console.log('fade top ' + fadeTop)
+        // console.log(i)
+        // console.log(window.pageYOffset + window.innerHeight)
+        // console.log('fade top ' + fadeTop)
 
         if (window.pageYOffset + window.innerHeight > fadeTop) {
             fade.classList.add('fade-active')
