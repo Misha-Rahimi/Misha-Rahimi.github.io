@@ -43,6 +43,15 @@ nav.nav-stick {
     color: white;
 }
 
+.nav-link:hover {
+    color: var(--light-medium-gray) !important;
+    font-weight: bold;
+}
+
+.nav-stick .nav-link:hover {
+    color: var(--medium-light-blue) !important;
+}
+
 .nav-item>a {
     border-bottom: 3px solid transparent;
 }
