@@ -66,17 +66,15 @@
     font-size: var(--experience-company-font-size) !important;
     font-weight: var(--experience-company-font-weight);
 
+    padding-right: 1rem;
+
     font-style: italic;
 }
 
 .experience-subheader .date {
-    padding-left: 1rem;
-
     font-size: var(--experience-date-font-size) !important;
     font-weight: var(--experience-date-font-weight);
     font-style: normal;
-
-    text-transform: uppercase;
 
     color: var(--medium-gray);
 }
