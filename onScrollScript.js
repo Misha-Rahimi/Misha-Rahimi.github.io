@@ -7,10 +7,8 @@ window.onscroll = function () {
         var sticky = navbar.offsetTop
 
         if (window.pageYOffset == 0) {
-            metaTag.content = '#2579cc'
             navbar.classList.remove('nav-stick')
         } else {
-            metaTag.content = '#000000'
             navbar.classList.add('nav-stick')
         }
     }
