@@ -45,7 +45,6 @@ nav.nav-stick {
 
 .nav-link:hover {
     color: var(--light-medium-gray) !important;
-    font-weight: bold;
 }
 
 .nav-stick .nav-link:hover {
