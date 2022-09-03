@@ -272,6 +272,17 @@ p {
     /* color: var(--medium-gray) */
 }
 
+.contactInfoSection .contact-center {
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfoSection .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
 .contactInfoSection .contact-header {
     font-weight: bold;
 }
@@ -282,7 +293,6 @@ p {
 }
 
 .contactInfoSection .contact-tile {
-    justify-content: center;
     display: flex;
     margin: 20px 0;
 }
